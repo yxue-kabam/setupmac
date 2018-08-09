@@ -1,0 +1,39 @@
+---
+# list of applications to install
+general:
+  local_home: "{{ lookup('env','HOME') }}"
+
+# homebrew applications
+applications:
+  - autojump
+  - git
+  - tree
+  - httpie
+  - curl
+  - wget
+  - zsh
+  - python
+  - python3
+  - vim
+  - pyenv
+  - ag
+  - emacs
+  - tmate
+  - rlwrap
+  - tmux
+  - direnv
+
+# homebrew cask applications
+cask_applications:
+  - google-chrome
+  - google-cloud-sdk
+  - firefox
+  - iterm2
+  - caffeine
+  - sublime-text
+
+downloads:
+   firefox-nightly:
+     name: Firefox Nightly
+     url: https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central/firefox-57.0a1.en-US.mac.dmg
+     dest: "{{general.local_home}}/Downloads/firefox-mac.dmg"

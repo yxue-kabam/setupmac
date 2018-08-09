@@ -1,0 +1,7 @@
+---
+# install development tools
+
+- name: install Rust
+  homebrew:
+    name: rust
+    state: latest
