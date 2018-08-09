@@ -4,3 +4,4 @@
 - hosts: mac 
   roles:
     - setup
+    - python-packages

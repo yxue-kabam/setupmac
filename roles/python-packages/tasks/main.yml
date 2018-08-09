@@ -1,0 +1,8 @@
+- pip:
+    name: jupyter
+
+- pip:
+    name: virtualenv
+
+- pip:
+    name: virtualenvwrapper
