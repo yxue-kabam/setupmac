@@ -26,8 +26,8 @@ echo "Setting up your using ansible
 echo "==========================================="
 
 sudo easy_install pip
-sudo easy_install cryptography
-sudo easy_install ansible
+sudo pip cryptography
+sudo pip ansible
 
 installdir="/tmp/setupmac-$RANDOM"
 mkdir $installdir
